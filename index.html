@@ -3,19 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio | Developer</title>
+    <title>Portofolio | Zulkifli09</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
+    <div class="page-glow page-glow-one"></div>
+    <div class="page-glow page-glow-two"></div>
+
+    <header class="site-header reveal">
       <a class="brand" href="#home" aria-label="Kembali ke beranda">
-        <span class="brand-mark">P</span>
+        <span class="brand-mark">Z</span>
         <span>Zulkifli09</span>
       </a>
 
@@ -34,20 +37,28 @@
 
     <main>
       <section class="hero" id="home">
-        <div class="hero-copy">
-          <p class="eyebrow">Web Developer • UI Enthusiast • Problem Solver</p>
-          <h1>Halo, saya membangun website yang rapi, cepat, dan enak dipakai.</h1>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Web Developer &bull; UI Enthusiast &bull; Problem Solver</p>
+          <h1>Website modern yang rapi, cepat, dan nyaman dipakai.</h1>
           <p class="hero-text">
-            Tempat ini bisa kamu pakai untuk menampilkan proyek yang pernah dikerjakan,
-            eksperimen pribadi, studi kasus, dan kemampuan teknis secara profesional.
+            Portofolio ini dibuat agar kamu bisa menampilkan proyek, eksperimen,
+            teknologi, dan kontak secara profesional. Data proyeknya mudah diubah
+            dari satu tempat di file JavaScript.
           </p>
           <div class="hero-actions">
             <a class="btn primary" href="#projects">Lihat Proyek</a>
             <a class="btn ghost" href="#contact">Hubungi Saya</a>
           </div>
+          <div class="hero-stack" aria-label="Teknologi utama">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+          </div>
         </div>
 
-        <div class="hero-panel" aria-label="Ringkasan portofolio">
+        <div class="hero-panel reveal" aria-label="Ringkasan portofolio">
+          <div class="panel-orbit"></div>
           <div class="profile-card">
             <div class="avatar">ZK</div>
             <div>
@@ -76,7 +87,7 @@
         </div>
       </section>
 
-      <section class="section about-section" id="about">
+      <section class="section about-section reveal" id="about">
         <div class="section-heading">
           <p class="eyebrow">Tentang Saya</p>
           <h2>Mengubah ide menjadi produk digital yang terasa matang.</h2>
@@ -84,8 +95,8 @@
         <div class="about-grid">
           <p>
             Saya fokus membuat antarmuka yang bersih, mudah dipahami, dan siap digunakan
-            di berbagai ukuran layar. Portofolio ini disiapkan agar kamu mudah menambah
-            proyek baru tanpa mengubah struktur besar halaman.
+            di berbagai ukuran layar. Struktur halaman ini dibuat sederhana supaya kamu
+            bisa menambah proyek baru tanpa mengubah banyak kode.
           </p>
           <div class="about-list">
             <span>Website responsif</span>
@@ -96,11 +107,11 @@
         </div>
       </section>
 
-      <section class="section" id="projects">
+      <section class="section reveal" id="projects">
         <div class="section-heading split">
           <div>
             <p class="eyebrow">Proyek Pilihan</p>
-            <h2>Tempat menampilkan karya yang sudah kamu kerjakan atau coba.</h2>
+            <h2>Karya yang sudah dikerjakan atau sedang dicoba.</h2>
           </div>
           <div class="filter-group" aria-label="Filter proyek">
             <button class="filter-btn active" type="button" data-filter="all">Semua</button>
@@ -110,52 +121,10 @@
           </div>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card" data-category="web">
-            <div class="project-media web"></div>
-            <div class="project-body">
-              <p class="project-type">Web Development</p>
-              <h3>Portal Akademik</h3>
-              <p>Sistem akademik dengan data mahasiswa, KRS, nilai, dan tagihan.</p>
-              <div class="tags">
-                <span>PHP</span>
-                <span>MySQL</span>
-                <span>Bootstrap</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="app">
-            <div class="project-media app"></div>
-            <div class="project-body">
-              <p class="project-type">Application</p>
-              <h3>Manajemen Tugas</h3>
-              <p>Aplikasi produktivitas untuk mengatur pekerjaan harian dan progres.</p>
-              <div class="tags">
-                <span>JavaScript</span>
-                <span>LocalStorage</span>
-                <span>CSS</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="ui">
-            <div class="project-media ui"></div>
-            <div class="project-body">
-              <p class="project-type">UI Design</p>
-              <h3>Dashboard Analitik</h3>
-              <p>Konsep dashboard dengan visual data, kartu metrik, dan tabel ringkas.</p>
-              <div class="tags">
-                <span>Figma</span>
-                <span>UI Kit</span>
-                <span>Prototype</span>
-              </div>
-            </div>
-          </article>
-        </div>
+        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
       </section>
 
-      <section class="section skills-section" id="skills">
+      <section class="section skills-section reveal" id="skills">
         <div class="section-heading">
           <p class="eyebrow">Skill</p>
           <h2>Teknologi dan kemampuan yang bisa kamu tampilkan.</h2>
@@ -172,7 +141,7 @@
         </div>
       </section>
 
-      <section class="section services-section">
+      <section class="section services-section reveal">
         <div class="service">
           <span>01</span>
           <h3>Website Personal</h3>
@@ -190,7 +159,7 @@
         </div>
       </section>
 
-      <section class="section contact-section" id="contact">
+      <section class="section contact-section reveal" id="contact">
         <div>
           <p class="eyebrow">Kontak</p>
           <h2>Mari bangun sesuatu yang keren.</h2>
@@ -207,7 +176,7 @@
     </main>
 
     <footer>
-      <p>© 2026 Nama Kamu. Dibuat dengan HTML, CSS, dan JavaScript.</p>
+      <p>&copy; 2026 Zulkifli09. Dibuat dengan HTML, CSS, dan JavaScript.</p>
     </footer>
 
     <script src="script.js"></script>
