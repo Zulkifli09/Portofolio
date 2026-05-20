@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio | Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Kembali ke beranda">
+        <span class="brand-mark">P</span>
+        <span>Zulkifli09</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#skills">Skill</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Web Developer • UI Enthusiast • Problem Solver</p>
+          <h1>Halo, saya membangun website yang rapi, cepat, dan enak dipakai.</h1>
+          <p class="hero-text">
+            Tempat ini bisa kamu pakai untuk menampilkan proyek yang pernah dikerjakan,
+            eksperimen pribadi, studi kasus, dan kemampuan teknis secara profesional.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">Lihat Proyek</a>
+            <a class="btn ghost" href="#contact">Hubungi Saya</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Ringkasan portofolio">
+          <div class="profile-card">
+            <div class="avatar">ZK</div>
+            <div>
+              <p class="profile-label">Zulkifli09</p>
+              <h2>Frontend / Fullstack Developer</h2>
+            </div>
+          </div>
+          <div class="stat-grid">
+            <div>
+              <strong>12+</strong>
+              <span>Proyek</span>
+            </div>
+            <div>
+              <strong>3+</strong>
+              <span>Tahun belajar</span>
+            </div>
+            <div>
+              <strong>8</strong>
+              <span>Teknologi</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>Responsif</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">Tentang Saya</p>
+          <h2>Mengubah ide menjadi produk digital yang terasa matang.</h2>
+        </div>
+        <div class="about-grid">
+          <p>
+            Saya fokus membuat antarmuka yang bersih, mudah dipahami, dan siap digunakan
+            di berbagai ukuran layar. Portofolio ini disiapkan agar kamu mudah menambah
+            proyek baru tanpa mengubah struktur besar halaman.
+          </p>
+          <div class="about-list">
+            <span>Website responsif</span>
+            <span>Dashboard admin</span>
+            <span>Sistem informasi</span>
+            <span>Landing page</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Proyek Pilihan</p>
+            <h2>Tempat menampilkan karya yang sudah kamu kerjakan atau coba.</h2>
+          </div>
+          <div class="filter-group" aria-label="Filter proyek">
+            <button class="filter-btn active" type="button" data-filter="all">Semua</button>
+            <button class="filter-btn" type="button" data-filter="web">Web</button>
+            <button class="filter-btn" type="button" data-filter="app">App</button>
+            <button class="filter-btn" type="button" data-filter="ui">UI</button>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-category="web">
+            <div class="project-media web"></div>
+            <div class="project-body">
+              <p class="project-type">Web Development</p>
+              <h3>Portal Akademik</h3>
+              <p>Sistem akademik dengan data mahasiswa, KRS, nilai, dan tagihan.</p>
+              <div class="tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Bootstrap</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="app">
+            <div class="project-media app"></div>
+            <div class="project-body">
+              <p class="project-type">Application</p>
+              <h3>Manajemen Tugas</h3>
+              <p>Aplikasi produktivitas untuk mengatur pekerjaan harian dan progres.</p>
+              <div class="tags">
+                <span>JavaScript</span>
+                <span>LocalStorage</span>
+                <span>CSS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="ui">
+            <div class="project-media ui"></div>
+            <div class="project-body">
+              <p class="project-type">UI Design</p>
+              <h3>Dashboard Analitik</h3>
+              <p>Konsep dashboard dengan visual data, kartu metrik, dan tabel ringkas.</p>
+              <div class="tags">
+                <span>Figma</span>
+                <span>UI Kit</span>
+                <span>Prototype</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Skill</p>
+          <h2>Teknologi dan kemampuan yang bisa kamu tampilkan.</h2>
+        </div>
+        <div class="skills-grid">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>PHP</span>
+          <span>MySQL</span>
+          <span>React</span>
+          <span>Git</span>
+          <span>Responsive Design</span>
+        </div>
+      </section>
+
+      <section class="section services-section">
+        <div class="service">
+          <span>01</span>
+          <h3>Website Personal</h3>
+          <p>Profil, portofolio, blog sederhana, dan halaman kontak.</p>
+        </div>
+        <div class="service">
+          <span>02</span>
+          <h3>Sistem Informasi</h3>
+          <p>CRUD, autentikasi, dashboard, laporan, dan pengelolaan data.</p>
+        </div>
+        <div class="service">
+          <span>03</span>
+          <h3>UI Responsif</h3>
+          <p>Tampilan yang tetap nyaman di laptop, tablet, dan HP.</p>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Kontak</p>
+          <h2>Mari bangun sesuatu yang keren.</h2>
+          <p>
+            Ganti informasi kontak di bawah dengan email, WhatsApp, GitHub, atau LinkedIn kamu.
+          </p>
+        </div>
+        <div class="contact-card">
+          <a href="mailto:emailkamu@example.com">emailkamu@example.com</a>
+          <a href="https://github.com/Zulkifli09?tab=repositories" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Nama Kamu. Dibuat dengan HTML, CSS, dan JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
