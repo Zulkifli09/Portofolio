@@ -1,9 +1,9 @@
 const projects = [
   {
     title: "Portal Akademik",
-    type: "Web Development",
+    type: "Main Quest",
     category: "web",
-    description: "Sistem akademik dengan data mahasiswa, KRS, nilai, tagihan, dan dashboard admin.",
+    description: "Sistem akademik untuk data mahasiswa, KRS, nilai, tagihan, dan dashboard admin yang terstruktur.",
     tags: ["PHP", "MySQL", "Bootstrap"],
     accent: "web",
     demoUrl: "#",
@@ -11,9 +11,9 @@ const projects = [
   },
   {
     title: "Manajemen Tugas",
-    type: "Application",
+    type: "Side Quest",
     category: "app",
-    description: "Aplikasi produktivitas untuk mengatur pekerjaan harian, prioritas, dan progres tugas.",
+    description: "Aplikasi produktivitas untuk mengatur pekerjaan harian, prioritas, progres, dan ritme fokus.",
     tags: ["JavaScript", "LocalStorage", "CSS"],
     accent: "app",
     demoUrl: "#",
@@ -21,9 +21,9 @@ const projects = [
   },
   {
     title: "Dashboard Analitik",
-    type: "UI Design",
+    type: "UI Stage",
     category: "ui",
-    description: "Konsep dashboard dengan visual data, kartu metrik, tabel ringkas, dan layout responsif.",
+    description: "Konsep dashboard dengan kartu metrik, visual data, tabel ringkas, dan layout yang mudah discan.",
     tags: ["Figma", "UI Kit", "Prototype"],
     accent: "ui",
     demoUrl: "#",

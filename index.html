@@ -3,23 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio | Zulkifli09</title>
+    <title>Portfolio | Zulkifli</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-glow page-glow-one"></div>
-    <div class="page-glow page-glow-two"></div>
+    <div class="pixel-backdrop" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
     <header class="site-header reveal">
       <a class="brand" href="#home" aria-label="Kembali ke beranda">
-        <span class="brand-mark">Z</span>
-        <span>Zulkifli09</span>
+        <span class="brand-mark">ZK</span>
+        <span>Zulkifli</span>
       </a>
 
       <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
@@ -38,16 +42,15 @@
     <main>
       <section class="hero" id="home">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Web Developer &bull; UI Enthusiast &bull; Problem Solver</p>
-          <h1>Website modern yang rapi, cepat, dan nyaman dipakai.</h1>
+          <p class="eyebrow">Zulkifli / Web Developer</p>
+          <h1>"Eat, Sleep, Code, Repeat."</h1>
           <p class="hero-text">
-            Portofolio ini dibuat agar kamu bisa menampilkan proyek, eksperimen,
-            teknologi, dan kontak secara profesional. Data proyeknya mudah diubah
-            dari satu tempat di file JavaScript.
+            Saya membangun interface responsif, dashboard, dan sistem informasi
+            dengan rasa visual yang rapi, interaksi halus, dan struktur kode yang mudah dirawat.
           </p>
           <div class="hero-actions">
-            <a class="btn primary" href="#projects">Lihat Proyek</a>
-            <a class="btn ghost" href="#contact">Hubungi Saya</a>
+            <a class="btn primary" href="#projects">Start Quest</a>
+            <a class="btn ghost" href="#contact">Contact</a>
           </div>
           <div class="hero-stack" aria-label="Teknologi utama">
             <span>HTML</span>
@@ -57,22 +60,30 @@
           </div>
         </div>
 
-        <div class="hero-panel reveal" aria-label="Ringkasan portofolio">
-          <div class="panel-orbit"></div>
-          <div class="profile-card">
-            <div class="avatar">ZK</div>
-            <div>
-              <p class="profile-label">Zulkifli09</p>
-              <h2>Frontend / Fullstack Developer</h2>
-            </div>
+        <div class="hero-console reveal" aria-label="Ringkasan profil">
+          <div class="console-top">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="pixel-avatar" aria-hidden="true">
+            <span class="eye left"></span>
+            <span class="eye right"></span>
+            <span class="mouth"></span>
+          </div>
+          <div class="console-lines">
+            <p><span>&gt;</span> load_profile.exe</p>
+            <p><span>&gt;</span> name: Zulkifli</p>
+            <p><span>&gt;</span> role: Backend / Fullstack</p>
+            <p><span>&gt;</span> status: ready_to_build</p>
           </div>
           <div class="stat-grid">
             <div>
-              <strong>12+</strong>
+              <strong>2+</strong>
               <span>Proyek</span>
             </div>
             <div>
-              <strong>3+</strong>
+              <strong>1+</strong>
               <span>Tahun belajar</span>
             </div>
             <div>
@@ -89,20 +100,20 @@
 
       <section class="section about-section reveal" id="about">
         <div class="section-heading">
-          <p class="eyebrow">Tentang Saya</p>
-          <h2>Mengubah ide menjadi produk digital yang terasa matang.</h2>
+          <p class="eyebrow">About</p>
+          <h2>Merakit ide menjadi pengalaman digital yang terasa matang.</h2>
         </div>
         <div class="about-grid">
           <p>
-            Saya fokus membuat antarmuka yang bersih, mudah dipahami, dan siap digunakan
-            di berbagai ukuran layar. Struktur halaman ini dibuat sederhana supaya kamu
-            bisa menambah proyek baru tanpa mengubah banyak kode.
+            Fokus saya ada di tampilan yang jelas, performa ringan, dan alur penggunaan
+            yang tidak bikin orang menebak-nebak. Portofolio ini dibuat seperti stage
+            pixel modern: playful, tapi tetap bersih dan profesional.
           </p>
           <div class="about-list">
-            <span>Website responsif</span>
-            <span>Dashboard admin</span>
-            <span>Sistem informasi</span>
-            <span>Landing page</span>
+            <span>Responsive Website</span>
+            <span>Admin Dashboard</span>
+            <span>Information System</span>
+            <span>Clean UI Build</span>
           </div>
         </div>
       </section>
@@ -110,11 +121,11 @@
       <section class="section reveal" id="projects">
         <div class="section-heading split">
           <div>
-            <p class="eyebrow">Proyek Pilihan</p>
-            <h2>Karya yang sudah dikerjakan atau sedang dicoba.</h2>
+            <p class="eyebrow">Quest Log</p>
+            <h2>Proyek pilihan dengan pendekatan praktis dan rapi.</h2>
           </div>
           <div class="filter-group" aria-label="Filter proyek">
-            <button class="filter-btn active" type="button" data-filter="all">Semua</button>
+            <button class="filter-btn active" type="button" data-filter="all">All</button>
             <button class="filter-btn" type="button" data-filter="web">Web</button>
             <button class="filter-btn" type="button" data-filter="app">App</button>
             <button class="filter-btn" type="button" data-filter="ui">UI</button>
@@ -126,8 +137,8 @@
 
       <section class="section skills-section reveal" id="skills">
         <div class="section-heading">
-          <p class="eyebrow">Skill</p>
-          <h2>Teknologi dan kemampuan yang bisa kamu tampilkan.</h2>
+          <p class="eyebrow">Inventory</p>
+          <h2>Stack dan kemampuan yang siap dipakai untuk membangun produk.</h2>
         </div>
         <div class="skills-grid">
           <span>HTML</span>
@@ -141,7 +152,7 @@
         </div>
       </section>
 
-      <section class="section services-section reveal">
+      <section class="section services-section reveal" aria-label="Layanan">
         <div class="service">
           <span>01</span>
           <h3>Website Personal</h3>
@@ -161,10 +172,11 @@
 
       <section class="section contact-section reveal" id="contact">
         <div>
-          <p class="eyebrow">Kontak</p>
+          <p class="eyebrow">Final Stage</p>
           <h2>Mari bangun sesuatu yang keren.</h2>
           <p>
-            Ganti informasi kontak di bawah dengan email, WhatsApp, GitHub, atau LinkedIn kamu.
+            Hubungi saya untuk website, dashboard, atau sistem yang butuh tampilan clean
+            dengan rasa interaktif.
           </p>
         </div>
         <div class="contact-card">
@@ -176,7 +188,7 @@
     </main>
 
     <footer>
-      <p>&copy; 2026 Zulkifli09. Dibuat dengan HTML, CSS, dan JavaScript.</p>
+      <p>&copy; 2026 | Zulkifli</p>
     </footer>
 
     <script src="script.js"></script>
