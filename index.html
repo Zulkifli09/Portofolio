@@ -1,196 +1,297 @@
-<!doctype html>
-<html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Zulkifli</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="pixel-backdrop" aria-hidden="true">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zulkifli | Fullstack Developer</title>
+    
+    <!-- Fonts: Outfit for Headings, Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons (Lightweight & Modern) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="noise-overlay"></div>
     </div>
 
-    <header class="site-header reveal">
-      <a class="brand" href="#home" aria-label="Kembali ke beranda">
-        <span class="brand-mark">ZK</span>
-        <span>Zulkifli</span>
-      </a>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-      <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-      </button>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">Zulkifli.</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
 
-      <nav class="site-nav" aria-label="Navigasi utama">
-        <a href="#about">Tentang</a>
-        <a href="#projects">Proyek</a>
-        <a href="#skills">Skill</a>
-        <a href="#contact">Kontak</a>
-      </nav>
-    </header>
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </nav>
 
     <main>
-      <section class="hero" id="home">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Zulkifli / Web Developer</p>
-          <h1>"Eat, Sleep, Code, Repeat."</h1>
-          <p class="hero-text">
-            Saya membangun interface responsif, dashboard, dan sistem informasi
-            dengan rasa visual yang rapi, interaksi halus, dan struktur kode yang mudah dirawat.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#projects">Start Quest</a>
-            <a class="btn ghost" href="#contact">Contact</a>
-          </div>
-          <div class="hero-stack" aria-label="Teknologi utama">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>PHP</span>
-          </div>
-        </div>
-
-        <div class="hero-console reveal" aria-label="Ringkasan profil">
-          <div class="console-top">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="pixel-avatar" aria-hidden="true">
-            <span class="eye left"></span>
-            <span class="eye right"></span>
-            <span class="mouth"></span>
-          </div>
-          <div class="console-lines">
-            <p><span>&gt;</span> load_profile.exe</p>
-            <p><span>&gt;</span> name: Zulkifli</p>
-            <p><span>&gt;</span> role: Backend / Fullstack</p>
-            <p><span>&gt;</span> status: ready_to_build</p>
-          </div>
-          <div class="stat-grid">
-            <div>
-              <strong>2+</strong>
-              <span>Proyek</span>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-badge reveal-up">
+                    <span class="pulse-dot"></span> Available for Work
+                </div>
+                <h1 class="reveal-up delay-1">
+                    Crafting <span class="text-gradient">Digital</span><br>
+                    Experiences.
+                </h1>
+                <p class="hero-desc reveal-up delay-2">
+                    Saya Zulkifli, seorang pengembang perangkat lunak yang berfokus pada pembuatan antarmuka pengguna yang luar biasa, performa tinggi, dan struktur kode yang solid.
+                </p>
+                <div class="hero-actions reveal-up delay-3">
+                    <a href="#projects" class="btn btn-primary">
+                        View Work <i class="ph ph-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Contact Me
+                    </a>
+                </div>
+                
+                <div class="hero-stats reveal-up delay-4">
+                    <div class="stat">
+                        <span class="stat-num">2+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num">10+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
             </div>
-            <div>
-              <strong>1+</strong>
-              <span>Tahun belajar</span>
+            
+            <div class="hero-visual reveal-scale delay-2">
+                <div class="glass-card visual-card">
+                    <div class="card-header">
+                        <div class="mac-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="card-body code-snippet">
+                        <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">"Zulkifli"</span>,
+  <span class="property">role</span>: <span class="string">"Fullstack Developer"</span>,
+  <span class="property">skills</span>: [<span class="string">"React"</span>, <span class="string">"PHP"</span>, <span class="string">"UI/UX"</span>],
+  <span class="method">build</span>() {
+    <span class="keyword">return</span> <span class="string">"Awesome Products"</span>;
+  }
+};</code></pre>
+                    </div>
+                </div>
             </div>
-            <div>
-              <strong>8</strong>
-              <span>Teknologi</span>
+            
+            <div class="scroll-indicator">
+                <p>Scroll down</p>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
             </div>
-            <div>
-              <strong>100%</strong>
-              <span>Responsif</span>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="section-title reveal-up">
+                    <p class="subtitle">About Me</p>
+                    <h2>Transforming ideas into <br><span class="text-gradient">reality.</span></h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text reveal-left">
+                        <p>Saya percaya bahwa kode yang baik tidak hanya tentang membuat sesuatu berfungsi, tetapi tentang merancang sistem yang mudah dirawat dan pengalaman yang menyenangkan bagi pengguna.</p>
+                        <p>Fokus saya adalah menjembatani kesenjangan antara desain teknis dan estetika visual, memastikan setiap produk yang saya bangun tidak hanya cepat dan aman, tetapi juga indah secara visual.</p>
+                        
+                        <div class="services-list mt-4">
+                            <div class="service-item">
+                                <div class="service-icon"><i class="ph ph-code"></i></div>
+                                <div>
+                                    <h3>Web Development</h3>
+                                    <p>Membangun aplikasi web interaktif dan responsif.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon"><i class="ph ph-paint-brush"></i></div>
+                                <div>
+                                    <h3>UI/UX Design</h3>
+                                    <p>Merancang antarmuka intuitif dengan fokus pada pengguna.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon"><i class="ph ph-database"></i></div>
+                                <div>
+                                    <h3>Backend Systems</h3>
+                                    <p>Arsitektur server yang tangguh dan aman.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual reveal-right">
+                        <div class="glass-card portrait-card">
+                            <img src="profile.jpeg" alt="Zulkifli" class="profile-img">
+                            <div class="floating-badge badge-1">
+                                <i class="ph-fill ph-star"></i> Proactive
+                            </div>
+                            <div class="floating-badge badge-2">
+                                <i class="ph-fill ph-lightning"></i> Fast Learner
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section about-section reveal" id="about">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>Merakit ide menjadi pengalaman digital yang terasa matang.</h2>
-        </div>
-        <div class="about-grid">
-          <p>
-            Fokus saya ada di tampilan yang jelas, performa ringan, dan alur penggunaan
-            yang tidak bikin orang menebak-nebak. Portofolio ini dibuat seperti stage
-            pixel modern: playful, tapi tetap bersih dan profesional.
-          </p>
-          <div class="about-list">
-            <span>Responsive Website</span>
-            <span>Admin Dashboard</span>
-            <span>Information System</span>
-            <span>Clean UI Build</span>
-          </div>
-        </div>
-      </section>
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding">
+            <div class="container">
+                <div class="projects-header reveal-up">
+                    <div class="section-title">
+                        <p class="subtitle">Portfolio</p>
+                        <h2>Featured <span class="text-gradient">Projects</span></h2>
+                    </div>
+                    
+                    <div class="filter-container">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="web">Web App</button>
+                        <button class="filter-btn" data-filter="ui">UI Design</button>
+                    </div>
+                </div>
 
-      <section class="section reveal" id="projects">
-        <div class="section-heading split">
-          <div>
-            <p class="eyebrow">Quest Log</p>
-            <h2>Proyek pilihan dengan pendekatan praktis dan rapi.</h2>
-          </div>
-          <div class="filter-group" aria-label="Filter proyek">
-            <button class="filter-btn active" type="button" data-filter="all">All</button>
-            <button class="filter-btn" type="button" data-filter="web">Web</button>
-            <button class="filter-btn" type="button" data-filter="app">App</button>
-            <button class="filter-btn" type="button" data-filter="ui">UI</button>
-          </div>
-        </div>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects will be injected here by script.js -->
+                </div>
+            </div>
+        </section>
 
-        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
-      </section>
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="container">
+                <div class="section-title text-center reveal-up">
+                    <p class="subtitle">My Arsenal</p>
+                    <h2>Technologies I <span class="text-gradient">Use</span></h2>
+                </div>
+                
+                <div class="skills-grid reveal-up delay-1">
+                    <div class="skill-card">
+                        <i class="ph-fill ph-file-html"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ph-fill ph-file-css"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ph-fill ph-file-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ph-fill ph-atom"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ph-fill ph-wind"></i>
+                        <span>Tailwind</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ph-fill ph-file-php"></i>
+                        <span>PHP</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ph-fill ph-database"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ph-fill ph-git-branch"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ph-fill ph-figma-logo"></i>
+                        <span>Figma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <section class="section skills-section reveal" id="skills">
-        <div class="section-heading">
-          <p class="eyebrow">Inventory</p>
-          <h2>Stack dan kemampuan yang siap dipakai untuk membangun produk.</h2>
-        </div>
-        <div class="skills-grid">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>PHP</span>
-          <span>MySQL</span>
-          <span>React</span>
-          <span>Git</span>
-          <span>Responsive Design</span>
-        </div>
-      </section>
-
-      <section class="section services-section reveal" aria-label="Layanan">
-        <div class="service">
-          <span>01</span>
-          <h3>Website Personal</h3>
-          <p>Profil, portofolio, blog sederhana, dan halaman kontak.</p>
-        </div>
-        <div class="service">
-          <span>02</span>
-          <h3>Sistem Informasi</h3>
-          <p>CRUD, autentikasi, dashboard, laporan, dan pengelolaan data.</p>
-        </div>
-        <div class="service">
-          <span>03</span>
-          <h3>UI Responsif</h3>
-          <p>Tampilan yang tetap nyaman di laptop, tablet, dan HP.</p>
-        </div>
-      </section>
-
-      <section class="section contact-section reveal" id="contact">
-        <div>
-          <p class="eyebrow">Final Stage</p>
-          <h2>Mari bangun sesuatu yang keren.</h2>
-          <p>
-            Hubungi saya untuk website, dashboard, atau sistem yang butuh tampilan clean
-            dengan rasa interaktif.
-          </p>
-        </div>
-        <div class="contact-card">
-          <a href="mailto:emailkamu@example.com">emailkamu@example.com</a>
-          <a href="https://github.com/Zulkifli09?tab=repositories" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-        </div>
-      </section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="contact-wrapper glass-card reveal-scale">
+                    <div class="contact-info">
+                        <h2>Let's work <br><span class="text-gradient">together.</span></h2>
+                        <p>Punya ide proyek atau sekadar ingin menyapa? Jangan ragu untuk menghubungi saya. Mari ciptakan sesuatu yang luar biasa.</p>
+                        
+                        <div class="social-links mt-4">
+                            <a href="mailto:emailkamu@example.com" class="social-link" aria-label="Email">
+                                <i class="ph ph-envelope-simple"></i>
+                            </a>
+                            <a href="https://github.com/Zulkifli09" target="_blank" class="social-link" aria-label="GitHub">
+                                <i class="ph ph-github-logo"></i>
+                            </a>
+                            <a href="https://linkedin.com/" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <i class="ph ph-linkedin-logo"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); alert('Pesan Anda telah terkirim! (Demo)');">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" required placeholder="Ceritakan tentang proyek Anda..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">
+                            Send Message <i class="ph ph-paper-plane-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-      <p>&copy; 2026 | Zulkifli</p>
+        <div class="container text-center">
+            <p>&copy; <span id="year">2026</span> Zulkifli. All rights reserved.</p>
+            <p class="footer-note">Designed & Built with passion.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
